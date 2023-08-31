@@ -1,0 +1,10 @@
+esquerdo = (int(input("Digite o andar do elevador esquerdo: ")))
+direito = (int(input("Digite o andar do elevador direito: ")))
+s = (int(input("Digite o seu andar: ")))
+
+if abs(esquerdo - s) < (s - direito):
+    print ("Esquerdo")
+elif abs(s - esquerdo) > abs(s - direito):
+    print ("Direito")
+else: 
+    print ("Direito")
